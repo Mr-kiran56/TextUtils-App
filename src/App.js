@@ -25,7 +25,6 @@ function App() {
       }, 1000);
 
 
-
     } else {
       setMode("light");
       document.body.style.backgroundColor = "white";
@@ -45,6 +44,7 @@ function App() {
       msg: message,
       type: type
     })
+    
     setTimeout(() => {
       setAlert(null);
     }, 2000);

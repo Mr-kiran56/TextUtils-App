@@ -126,7 +126,9 @@ export default function Textbar(props) {
 
                 <div className='container'>
                     <h3>{props.textsummary}</h3>
+                    
                     <p className='fs-5'> {text.split(" ").filter(word => word !== "").length} words and {text.length} characters </p>
+                    
                     <p>{(0.08 * text.split(" ").filter(word => word !== "").length).toFixed(2)} min time taken</p>
                     <h3>{props.preview}</h3>
                     <p style={{ fontFamily: fontStyle }} >{text.length > 0 ? text : "Enter Something to Preview Your Text....."} </p>
